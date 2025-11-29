@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import logo from "@assets/jackson_logo.png";
 
 export function Footer() {
   return (
@@ -6,9 +6,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
-            <div className="flex items-center gap-2 mb-2">
-              <Home className="h-6 w-6 text-white" />
-              <span className="font-serif text-xl font-bold tracking-tight">JACKSON <span className="font-light">RENTAL HOMES</span></span>
+            <div className="bg-white/90 p-2 rounded-sm mb-4">
+              <img src={logo} alt="Jackson Rental Homes" className="h-12 w-auto object-contain" />
             </div>
             <span className="text-xs font-sans opacity-70 tracking-widest uppercase">The 1% Listing Program</span>
           </div>
@@ -17,12 +16,10 @@ export function Footer() {
             <a href="#" className="hover:text-white transition-colors">About Us</a>
             <a href="#" className="hover:text-white transition-colors">Services</a>
             <a href="#" className="hover:text-white transition-colors">Contact Us</a>
-            <a href="#" className="hover:text-white transition-colors border border-white/30 px-3 py-1 rounded-sm hover:bg-white hover:text-primary">Tenant Login</a>
           </div>
         </div>
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-sans">
-          <p>© 2024 Jackson Rental Homes LLC. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Providing reasonable accommodations for people of all walks of life.</p>
+          <p>© 2025 Jackson Rental Homes LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

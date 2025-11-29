@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroVideo from "@assets/generated_videos/cinematic_drone_shot_of_philadelphia_skyline_at_sunrise.mp4";
+import logo from "@assets/jackson_logo.png";
 
 export function Hero() {
   return (
@@ -29,8 +30,10 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
         >
-          <div className="mb-6 inline-block bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full border border-white/20">
-            <span className="text-sm md:text-base font-sans tracking-wider uppercase">Jackson Rental Homes Presents</span>
+          <div className="mb-8 flex justify-center">
+            <div className="bg-white/90 backdrop-blur-sm px-8 py-4 rounded-sm border border-white/20 shadow-lg">
+              <img src={logo} alt="Jackson Rental Homes" className="h-16 md:h-20 w-auto object-contain" />
+            </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight mb-4 text-shadow-lg">
             Your Home. Your Equity.
