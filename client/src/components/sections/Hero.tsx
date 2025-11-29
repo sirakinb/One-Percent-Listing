@@ -2,9 +2,14 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroVideo from "@assets/generated_videos/cinematic_drone_shot_of_philadelphia_skyline_at_sunrise.mp4";
-import logo from "@assets/jackson_logo.png";
+import neighborhoodVideo from "@assets/generated_videos/philadelphia_residential_rowhome_street.mp4"; // Will use this if generated, otherwise fallback
+import logo from "@assets/jackson_logo_transparent.png";
+import { useState } from "react";
 
 export function Hero() {
+  // State to toggle videos if we wanted to, but for now let's use the new one as primary if available
+  // I'll default to the new neighborhood one as it fits the brand better
+  
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Video Background */}
@@ -15,12 +20,14 @@ export function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover"
+          key={neighborhoodVideo} // Force re-render if source changes
         >
+          <source src={neighborhoodVideo} type="video/mp4" />
           <source src={heroVideo} type="video/mp4" />
         </video>
         {/* Overlay Gradient - Green/Cream Theme */}
-        <div className="absolute inset-0 bg-primary/70 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-primary/60 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}
@@ -31,14 +38,15 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
         >
           <div className="mb-8 flex justify-center">
-            <div className="bg-white/90 backdrop-blur-sm px-8 py-4 rounded-sm border border-white/20 shadow-lg">
-              <img src={logo} alt="Jackson Rental Homes" className="h-16 md:h-20 w-auto object-contain" />
+            {/* Logo Container - White background for the black logo */}
+            <div className="bg-white/95 backdrop-blur-sm px-8 py-6 rounded-sm border border-white/20 shadow-2xl max-w-xs md:max-w-md w-full">
+              <img src={logo} alt="Jackson Rental Homes" className="w-full h-auto object-contain" />
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight mb-4 text-shadow-lg">
             Your Home. Your Equity.
           </h1>
-          <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-8 font-sans max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-8 font-sans max-w-3xl mx-auto text-shadow-sm">
             Selling in Philadelphia just got smarter. Premium service for every neighborhood.
           </p>
           
@@ -49,7 +57,7 @@ export function Hero() {
           >
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-secondary text-lg px-8 py-6 rounded-sm font-sans uppercase tracking-widest border-none font-semibold"
+              className="bg-white text-primary hover:bg-secondary text-lg px-8 py-6 rounded-sm font-sans uppercase tracking-widest border-none font-semibold shadow-lg hover:shadow-xl transition-all"
             >
               View Our Process <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

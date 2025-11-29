@@ -1,4 +1,4 @@
-import logo from "@assets/jackson_logo.png";
+import logo from "@assets/jackson_logo_transparent.png";
 
 export function Footer() {
   return (
@@ -6,8 +6,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
-            <div className="bg-white/90 p-2 rounded-sm mb-4">
-              <img src={logo} alt="Jackson Rental Homes" className="h-12 w-auto object-contain" />
+            <div className="bg-white p-3 rounded-sm mb-4 max-w-[200px]">
+              <img src={logo} alt="Jackson Rental Homes" className="w-full h-auto object-contain" />
             </div>
             <span className="text-xs font-sans opacity-70 tracking-widest uppercase">The 1% Listing Program</span>
           </div>
