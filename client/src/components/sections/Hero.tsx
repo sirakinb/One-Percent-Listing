@@ -1,15 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroVideo from "@assets/generated_videos/cinematic_drone_shot_of_philadelphia_skyline_at_sunrise.mp4";
-import neighborhoodVideo from "@assets/generated_videos/philadelphia_residential_rowhome_street.mp4"; // Will use this if generated, otherwise fallback
+import heroVideo from "@assets/generated_videos/renovated_philadelphia_rowhome_exterior.mp4";
 import logo from "@assets/jackson_logo_transparent.png";
-import { useState } from "react";
 
 export function Hero() {
-  // State to toggle videos if we wanted to, but for now let's use the new one as primary if available
-  // I'll default to the new neighborhood one as it fits the brand better
-  
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
       {/* Video Background */}
@@ -20,9 +15,8 @@ export function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover"
-          key={neighborhoodVideo} // Force re-render if source changes
+          key={heroVideo} // Force re-render if source changes
         >
-          <source src={neighborhoodVideo} type="video/mp4" />
           <source src={heroVideo} type="video/mp4" />
         </video>
         {/* Overlay Gradient - Green/Cream Theme */}
