@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroVideo from "@assets/generated_videos/renovated_philadelphia_rowhome_exterior.mp4";
+import heroVideo from "@assets/generated_videos/philadelphia_residential_rowhome_street.mp4";
 import logo from "@assets/jackson_logo_transparent.png";
 
 export function Hero() {
@@ -38,10 +38,10 @@ export function Hero() {
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight mb-4 text-shadow-lg">
-            Your Home. Your Equity.
+            The 1% Listing
           </h1>
           <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-8 font-sans max-w-3xl mx-auto text-shadow-sm">
-            Selling in Philadelphia just got smarter. Premium service for every neighborhood.
+            Your Home. Your Equity. Selling in Philadelphia just got smarter.
           </p>
           
           <motion.div
