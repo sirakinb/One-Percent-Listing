@@ -33,8 +33,8 @@ export function Hero() {
         >
           <div className="mb-8 flex justify-center">
             {/* Logo Container - White background for the black logo */}
-            <div className="bg-white/95 backdrop-blur-sm px-8 py-6 rounded-sm border border-white/20 shadow-2xl max-w-xs md:max-w-md w-full">
-              <img src={logo} alt="Jackson Rental Homes" className="w-full h-auto object-contain" />
+            <div className="bg-white/95 backdrop-blur-sm px-6 py-4 rounded-sm border border-white/20 shadow-2xl inline-block">
+              <img src={logo} alt="Jackson Rental Homes" className="w-[240px] md:w-[320px] h-auto object-contain" />
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight mb-4 text-shadow-lg">
