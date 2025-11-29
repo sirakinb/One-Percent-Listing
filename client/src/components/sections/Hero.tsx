@@ -1,31 +1,54 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroVideo from "@assets/generated_videos/philadelphia_residential_rowhome_street.mp4";
+import { useState, useEffect } from "react";
 import logo from "@assets/jackson_logo_transparent.png";
 
+// Videos
+import video1 from "@assets/generated_videos/philadelphia_residential_rowhome_street.mp4";
+import video2 from "@assets/generated_videos/renovated_philadelphia_rowhome_exterior.mp4";
+import video3 from "@assets/generated_videos/cinematic_drone_shot_of_philadelphia_skyline_at_sunrise.mp4";
+
+const videos = [video1, video2, video3];
+
 export function Hero() {
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentVideoIndex((prev) => (prev + 1) % videos.length);
+    }, 6000); // Switch every 6 seconds
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-          key={heroVideo} // Force re-render if source changes
-        >
-          <source src={heroVideo} type="video/mp4" />
-        </video>
+      {/* Video Background Slideshow */}
+      <div className="absolute inset-0 z-0 bg-black">
+        <AnimatePresence mode="popLayout">
+          <motion.video
+            key={currentVideoIndex}
+            src={videos[currentVideoIndex]}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        </AnimatePresence>
+        
         {/* Overlay Gradient - Green/Cream Theme */}
-        <div className="absolute inset-0 bg-primary/60 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-primary/60 mix-blend-multiply z-10" />
+        <div className="absolute inset-0 bg-black/30 z-10" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-20 container mx-auto px-4 text-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -65,7 +88,7 @@ export function Hero() {
 
       {/* Scroll Indicator */}
       <motion.div 
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 z-20"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
