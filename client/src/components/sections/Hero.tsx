@@ -32,9 +32,13 @@ export function Hero() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
         >
           <div className="mb-8 flex justify-center">
-            {/* Logo Container - White background for the black logo */}
-            <div className="bg-white/95 backdrop-blur-sm px-6 py-4 rounded-sm border border-white/20 shadow-2xl inline-block">
-              <img src={logo} alt="Jackson Rental Homes" className="w-[240px] md:w-[320px] h-auto object-contain" />
+            {/* Logo with inverted colors for dark background - removes the boxy look */}
+            <div className="px-4 py-2 inline-block">
+              <img 
+                src={logo} 
+                alt="Jackson Rental Homes" 
+                className="w-[240px] md:w-[320px] h-auto object-contain brightness-0 invert drop-shadow-lg" 
+              />
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight mb-4 text-shadow-lg">
