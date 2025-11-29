@@ -33,67 +33,69 @@
 }
 
 :root {
-  /* Luxury Palette: White, Navy, Gold */
-  --background: 0 0% 98%; /* Soft White */
-  --foreground: 215 28% 17%; /* Deep Navy */
+  /* Jackson Rental Homes Palette: Deep Green, White, Cream */
+  /* Primary Green based on screenshot: ~ #1a4d4d (24 66% 20% HSL approx or 180 50% 20%) */
+  
+  --background: 40 20% 98%; /* Soft Cream/White */
+  --foreground: 180 30% 15%; /* Deep Green/Black text */
 
   --card: 0 0% 100%;
-  --card-foreground: 215 28% 17%;
+  --card-foreground: 180 30% 15%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 215 28% 17%;
+  --popover-foreground: 180 30% 15%;
 
-  --primary: 215 28% 17%; /* Deep Navy */
-  --primary-foreground: 45 20% 90%; /* Soft Gold/Cream */
+  --primary: 175 45% 25%; /* Deep Hunter Green */
+  --primary-foreground: 0 0% 100%; /* White */
 
-  --secondary: 210 20% 96%; /* Light Blue/Grey */
-  --secondary-foreground: 215 28% 17%;
+  --secondary: 40 20% 94%; /* Light Cream */
+  --secondary-foreground: 175 45% 25%;
 
-  --muted: 210 20% 96%;
-  --muted-foreground: 215 15% 40%;
+  --muted: 40 10% 90%;
+  --muted-foreground: 180 15% 40%;
 
-  --accent: 35 40% 65%; /* Muted Gold */
-  --accent-foreground: 215 28% 17%;
+  --accent: 175 35% 40%; /* Lighter Green for accents */
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84% 60%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 98%;
 
-  --border: 215 15% 90%;
-  --input: 215 15% 90%;
-  --ring: 215 28% 17%;
+  --border: 175 20% 85%;
+  --input: 175 20% 85%;
+  --ring: 175 45% 25%;
 
-  --radius: 0rem; /* Sharp corners for luxury feel, or slight rounding */
+  --radius: 0.25rem; /* Slightly rounded for approachable feel */
 }
 
 .dark {
-  /* Dark Luxury: Deep Navy Background, Gold Text */
-  --background: 215 28% 13%;
-  --foreground: 45 20% 90%;
+  /* Dark mode mapping if needed */
+  --background: 180 30% 10%;
+  --foreground: 40 20% 90%;
 
-  --card: 215 28% 15%;
-  --card-foreground: 45 20% 90%;
+  --card: 180 30% 12%;
+  --card-foreground: 40 20% 90%;
 
-  --popover: 215 28% 15%;
-  --popover-foreground: 45 20% 90%;
+  --popover: 180 30% 12%;
+  --popover-foreground: 40 20% 90%;
 
-  --primary: 35 40% 65%; /* Gold */
-  --primary-foreground: 215 28% 13%;
+  --primary: 175 45% 35%;
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 215 20% 20%;
-  --secondary-foreground: 45 20% 90%;
+  --secondary: 180 20% 15%;
+  --secondary-foreground: 40 20% 90%;
 
-  --muted: 215 20% 20%;
-  --muted-foreground: 215 15% 60%;
+  --muted: 180 20% 15%;
+  --muted-foreground: 180 15% 60%;
 
-  --accent: 215 20% 25%;
-  --accent-foreground: 45 20% 90%;
+  --accent: 175 35% 30%;
+  --accent-foreground: 40 20% 90%;
 
   --destructive: 0 62% 30%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 98%;
 
-  --border: 215 20% 25%;
-  --input: 215 20% 25%;
-  --ring: 35 40% 65%;
+  --border: 180 20% 20%;
+  --input: 180 20% 20%;
+  --ring: 175 45% 35%;
 }
 
 @layer base {
@@ -108,15 +110,15 @@
   }
 }
 
-/* Custom Cinematic Utilities */
+/* Custom Utilities */
 @layer utilities {
   .text-shadow-sm {
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
   }
   .text-shadow-lg {
-    text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 8px rgba(0,0,0,0.4);
   }
   .glass-panel {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
+    @apply bg-white/80 backdrop-blur-md border border-white/50;
   }
 }

@@ -17,8 +17,9 @@ export function Hero() {
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
-        {/* Overlay Gradient - Cinema Style */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/10" />
+        {/* Overlay Gradient - Green/Cream Theme */}
+        <div className="absolute inset-0 bg-primary/70 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       {/* Content */}
@@ -28,11 +29,14 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
         >
+          <div className="mb-6 inline-block bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full border border-white/20">
+            <span className="text-sm md:text-base font-sans tracking-wider uppercase">Jackson Rental Homes Presents</span>
+          </div>
           <h1 className="text-5xl md:text-7xl font-serif font-medium tracking-tight mb-4 text-shadow-lg">
             Your Home. Your Equity.
           </h1>
-          <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-8 font-sans">
-            Selling in Philadelphia just got smarter.
+          <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-8 font-sans max-w-3xl mx-auto">
+            Selling in Philadelphia just got smarter. Premium service for every neighborhood.
           </p>
           
           <motion.div
@@ -42,7 +46,7 @@ export function Hero() {
           >
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 rounded-none font-sans uppercase tracking-widest border-none"
+              className="bg-white text-primary hover:bg-secondary text-lg px-8 py-6 rounded-sm font-sans uppercase tracking-widest border-none font-semibold"
             >
               View Our Process <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

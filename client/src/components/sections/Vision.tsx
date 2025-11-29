@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import interiorImage from "@assets/generated_images/bright_modern_philadelphia_rowhome_interior.png";
+import interiorImage from "@assets/generated_images/modern_apartment_interior.png";
 
 export function Vision() {
   return (
@@ -13,14 +13,14 @@ export function Vision() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative aspect-[4/5] lg:aspect-square overflow-hidden"
+            className="relative aspect-[4/5] lg:aspect-square overflow-hidden rounded-sm"
           >
             <img 
               src={interiorImage} 
-              alt="Modern Philadelphia Rowhome Interior" 
+              alt="Modern Philadelphia Apartment Interior" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
             />
-            <div className="absolute inset-0 border border-primary/5 pointer-events-none m-4" />
+            <div className="absolute inset-0 border-2 border-primary/10 pointer-events-none m-6" />
           </motion.div>
 
           {/* Text Side */}
@@ -31,19 +31,18 @@ export function Vision() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-accent font-sans text-sm tracking-[0.2em] uppercase mb-4 block">
-                The Modern Seller
+              <span className="text-accent font-sans text-sm tracking-[0.2em] uppercase mb-4 block font-bold">
+                For Every Homeowner
               </span>
               <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">
                 The market is strong.
               </h2>
               <div className="w-20 h-[1px] bg-accent mb-8" />
               <p className="text-lg text-muted-foreground font-sans leading-relaxed max-w-md">
-                You've built equity in your home through years of dedication. 
-                When it's time to sell, you shouldn't have to give away a significant 
-                portion of that value.
+                Jackson Rental Homes is committed to providing reasonable accommodations for people of all walks of life. 
+                Whether you're selling a single-family home or an investment property, you deserve a fair, transparent process.
               </p>
-              <p className="text-lg text-primary font-medium font-serif italic mt-4">
+              <p className="text-lg text-primary font-medium font-serif italic mt-4 border-l-4 border-accent pl-4">
                 "And you deserve to keep more of what you’ve built."
               </p>
             </motion.div>

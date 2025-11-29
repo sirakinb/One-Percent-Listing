@@ -9,7 +9,7 @@ export function PricingComparison() {
           <h2 className="text-4xl font-serif text-primary mb-4">Introducing the 1% Listing</h2>
           <p className="text-muted-foreground font-sans max-w-2xl mx-auto">
             Full-service real estate at a fraction of the traditional cost. 
-            No compromises on quality.
+            Available for all properties across Philadelphia.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export function PricingComparison() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-background/50 backdrop-blur-sm p-8 md:p-12 border border-border/50 grayscale opacity-70 hover:opacity-100 transition-opacity duration-500"
+            className="bg-white/50 p-8 md:p-12 border border-border grayscale opacity-70 hover:opacity-100 transition-opacity duration-500"
           >
             <h3 className="text-xl font-sans tracking-widest uppercase text-muted-foreground mb-2">Traditional</h3>
             <div className="text-5xl md:text-6xl font-serif text-muted-foreground mb-8">6%</div>
@@ -38,20 +38,20 @@ export function PricingComparison() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white p-8 md:p-12 border border-accent/30 shadow-2xl relative overflow-hidden group"
+            className="bg-primary text-primary-foreground p-8 md:p-12 shadow-2xl relative overflow-hidden group"
           >
-            <div className="absolute top-0 right-0 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 uppercase tracking-wider">
-              Modern Standard
+            <div className="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
+              The Jackson Standard
             </div>
-            <h3 className="text-xl font-sans tracking-widest uppercase text-primary mb-2">Modern Listing</h3>
-            <div className="text-6xl md:text-7xl font-serif text-primary mb-8 group-hover:scale-105 transition-transform duration-500 origin-left">
+            <h3 className="text-xl font-sans tracking-widest uppercase text-white/90 mb-2">Jackson Listing</h3>
+            <div className="text-6xl md:text-7xl font-serif text-white mb-8 group-hover:scale-105 transition-transform duration-500 origin-left">
               1%
             </div>
-            <ul className="space-y-4 text-primary font-sans">
-              <li className="flex items-center gap-3 font-medium"><div className="bg-accent/20 p-1 rounded-full"><Check className="h-4 w-4 text-accent-foreground" /></div> Professional Photography</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-accent/20 p-1 rounded-full"><Check className="h-4 w-4 text-accent-foreground" /></div> Drone Videography</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-accent/20 p-1 rounded-full"><Check className="h-4 w-4 text-accent-foreground" /></div> Modern Staging Advice</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-accent/20 p-1 rounded-full"><Check className="h-4 w-4 text-accent-foreground" /></div> Digital Marketing</li>
+            <ul className="space-y-4 text-white font-sans">
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Professional Photography</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Drone Videography</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> City-Wide Expertise</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Digital Marketing</li>
             </ul>
           </motion.div>
         </div>
