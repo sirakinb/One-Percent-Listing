@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import soldImg from "@assets/generated_images/sold_sign_in_front_of_luxury_home.png";
 
 export function CTA() {
@@ -30,12 +31,14 @@ export function CTA() {
           <p className="text-xl text-white/80 font-sans font-light mb-10">
             Join the modern real estate revolution in Philadelphia.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-primary hover:bg-accent hover:text-primary-foreground text-lg px-10 py-8 rounded-none font-sans uppercase tracking-widest transition-all duration-300"
-          >
-            Learn How It Works
-          </Button>
+          <Link href="/vsl">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary hover:bg-accent hover:text-primary-foreground text-lg px-10 py-8 rounded-none font-sans uppercase tracking-widest transition-all duration-300"
+            >
+              Learn How It Works
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
