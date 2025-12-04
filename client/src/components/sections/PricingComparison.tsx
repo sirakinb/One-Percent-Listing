@@ -50,7 +50,7 @@ export function PricingComparison() {
               <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Professional Photography</li>
               <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> MLS Listing</li>
               <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Strategic Pricing Guidance</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Optional Media Enhancements (Drone, Videography)</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Premium Digital Marketing</li>
             </ul>
           </motion.div>
         </div>

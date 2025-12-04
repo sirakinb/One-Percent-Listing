@@ -39,8 +39,7 @@ export function ServicesGrid() {
           <h2 className="text-4xl font-serif mb-6">Polished Professional Presentation</h2>
           <div className="w-12 h-[1px] bg-accent mx-auto mb-8" />
           <p className="text-xl text-white/80 font-sans font-light max-w-3xl mx-auto leading-relaxed">
-            Every listing receives a polished professional presentation tailored to the home.
-            Available enhancements include photography, drone media, digital exposure, and selling guidance.
+            We provide a clear, streamlined listing experience designed to help you sell confidently and efficiently. Every homeowner receives guidance, market insight, and support through each step of the selling process.
           </p>
         </motion.div>
 

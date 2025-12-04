@@ -2,8 +2,13 @@ import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { useEffect } from "react";
 
 export default function VSLPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       {/* 1. HERO SECTION */}
