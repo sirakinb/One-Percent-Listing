@@ -36,7 +36,7 @@ export default function VSLPage() {
              {/* Placeholder for user video */}
             <iframe 
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&rel=0" // Placeholder ID, user can replace
+              src="https://www.youtube.com/embed/2QLRC3T6AAw?rel=0"
               title="VSL Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
