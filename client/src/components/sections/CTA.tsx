@@ -31,7 +31,7 @@ export function CTA() {
           <p className="text-xl text-white/80 font-sans font-light mb-10">
             Join the modern real estate revolution in Philadelphia.
           </p>
-          <Link href="/vsl">
+          <Link href="/process">
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-accent hover:text-primary-foreground text-lg px-10 py-8 rounded-none font-sans uppercase tracking-widest transition-all duration-300"

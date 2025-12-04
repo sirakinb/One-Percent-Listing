@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useEffect } from "react";
 
-export default function VSLPage() {
+export default function ProcessPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

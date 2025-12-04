@@ -77,7 +77,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
-            <Link href="/vsl">
+            <Link href="/process">
               <Button 
                 size="lg" 
                 className="bg-white text-primary hover:bg-secondary text-lg px-8 py-6 rounded-sm font-sans uppercase tracking-widest border-none font-semibold shadow-lg hover:shadow-xl transition-all"
