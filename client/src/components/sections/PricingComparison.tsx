@@ -25,10 +25,9 @@ export function PricingComparison() {
             <h3 className="text-xl font-sans tracking-widest uppercase text-muted-foreground mb-2">Traditional</h3>
             <div className="text-5xl md:text-6xl font-serif text-muted-foreground mb-8">6%</div>
             <ul className="space-y-4 text-muted-foreground font-sans">
-              <li className="flex items-center gap-3"><Check className="h-4 w-4" /> Standard Marketing</li>
               <li className="flex items-center gap-3"><Check className="h-4 w-4" /> MLS Listing</li>
-              <li className="flex items-center gap-3"><Check className="h-4 w-4" /> Paperwork Handling</li>
-              <li className="flex items-center gap-3 text-destructive decoration-destructive line-through opacity-50">High Fees</li>
+              <li className="flex items-center gap-3"><Check className="h-4 w-4" /> Basic Marketing</li>
+              <li className="flex items-center gap-3"><Check className="h-4 w-4" /> High Fees</li>
             </ul>
           </motion.div>
 
@@ -49,9 +48,9 @@ export function PricingComparison() {
             </div>
             <ul className="space-y-4 text-white font-sans">
               <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Professional Photography</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Drone Videography</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> City-Wide Expertise</li>
-              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Digital Marketing</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> MLS Listing</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Strategic Pricing Guidance</li>
+              <li className="flex items-center gap-3 font-medium"><div className="bg-white/20 p-1 rounded-full"><Check className="h-4 w-4 text-white" /></div> Optional Media Enhancements (Drone, Videography)</li>
             </ul>
           </motion.div>
         </div>

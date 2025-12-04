@@ -46,11 +46,12 @@ export function ServicesGrid() {
           transition={{ duration: 1 }}
           className="text-center mb-20"
         >
-          <span className="text-accent font-sans text-xs tracking-[0.3em] uppercase block mb-4">
-            No Compromises
-          </span>
-          <h2 className="text-4xl font-serif mb-6">Premium Marketing Included</h2>
-          <div className="w-12 h-[1px] bg-accent mx-auto" />
+          <h2 className="text-4xl font-serif mb-6">Polished Professional Presentation</h2>
+          <div className="w-12 h-[1px] bg-accent mx-auto mb-8" />
+          <p className="text-xl text-white/80 font-sans font-light max-w-3xl mx-auto leading-relaxed">
+            Every listing receives a polished professional presentation tailored to the home.
+            Available enhancements include photography, drone media, digital exposure, and selling guidance.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">

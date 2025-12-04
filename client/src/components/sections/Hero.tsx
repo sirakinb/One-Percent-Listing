@@ -68,7 +68,7 @@ export function Hero() {
             The 1% Listing
           </h1>
           <p className="text-xl md:text-2xl font-light tracking-wide text-white/90 mb-8 font-sans max-w-3xl mx-auto text-shadow-sm">
-            Your Home. Your Equity. Selling in Philadelphia just got smarter.
+            A smarter, more transparent way to sell your home in Philadelphia — and keep more of your equity.
           </p>
           
           <motion.div
@@ -80,7 +80,7 @@ export function Hero() {
               size="lg" 
               className="bg-white text-primary hover:bg-secondary text-lg px-8 py-6 rounded-sm font-sans uppercase tracking-widest border-none font-semibold shadow-lg hover:shadow-xl transition-all"
             >
-              View Our Process <ArrowRight className="ml-2 h-4 w-4" />
+              See How It Works <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </motion.div>
         </motion.div>

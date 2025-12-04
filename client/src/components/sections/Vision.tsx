@@ -35,15 +35,11 @@ export function Vision() {
                 For Every Homeowner
               </span>
               <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">
-                The market is strong.
+                The market is strong. <br />Your opportunity is real.
               </h2>
               <div className="w-20 h-[1px] bg-accent mb-8" />
               <p className="text-lg text-muted-foreground font-sans leading-relaxed max-w-md">
-                Jackson Rental Homes is committed to providing reasonable accommodations for people of all walks of life. 
-                Whether you're selling a single-family home or an investment property, you deserve a fair, transparent process.
-              </p>
-              <p className="text-lg text-primary font-medium font-serif italic mt-4 border-l-4 border-accent pl-4">
-                "And you deserve to keep more of what you’ve built."
+                Jackson Rental Homes helps Philadelphia homeowners sell with confidence, clarity, and a modern commission structure designed to protect your equity.
               </p>
             </motion.div>
           </div>

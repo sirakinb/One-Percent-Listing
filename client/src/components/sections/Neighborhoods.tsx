@@ -59,7 +59,6 @@ export function Neighborhoods() {
               <p className="text-sm text-white/70 font-sans mb-6 leading-relaxed">
                 We are one of the only businesses in Philadelphia responsible for rehabbing houses and providing reasonable accommodations for people of all walks of life.
               </p>
-              <span className="text-white text-xs font-bold uppercase tracking-widest border-b border-white/50 pb-1">View Our Listings</span>
             </div>
           </div>
         </div>
