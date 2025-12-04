@@ -8,16 +8,6 @@ const services = [
     desc: "Magazine-quality HDR images that capture your home's best angles."
   },
   {
-    icon: MonitorPlay,
-    title: "Cinematic Drone Tours",
-    desc: "4K aerial footage showcasing your property and neighborhood context."
-  },
-  {
-    icon: Home,
-    title: "Modern Staging",
-    desc: "Expert consultation to style your home for the highest possible offers."
-  },
-  {
     icon: TrendingUp,
     title: "Digital Marketing",
     desc: "Targeted social campaigns reaching thousands of qualified local buyers."
