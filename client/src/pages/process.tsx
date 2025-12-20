@@ -53,7 +53,7 @@ export default function ProcessPage() {
             <Link href="/booking">
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 text-lg px-4 md:px-10 py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 text-base md:text-lg px-4 md:px-10 py-6 md:py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg hover:shadow-xl transition-all whitespace-normal h-auto"
               >
                 Book Your Free Consultation <ArrowRight className="ml-2 h-4 w-4 hidden sm:inline" />
               </Button>
@@ -192,9 +192,9 @@ export default function ProcessPage() {
             <Link href="/booking">
               <Button 
                 size="lg" 
-                className="bg-white text-primary hover:bg-secondary text-lg px-10 py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg transition-all font-semibold"
+                className="w-full sm:w-auto bg-white text-primary hover:bg-secondary text-base md:text-lg px-6 md:px-10 py-6 md:py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg transition-all font-semibold whitespace-normal h-auto"
               >
-                Book Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                Book Your Free Consultation <ArrowRight className="ml-2 h-4 w-4 hidden sm:inline" />
               </Button>
             </Link>
           </motion.div>
