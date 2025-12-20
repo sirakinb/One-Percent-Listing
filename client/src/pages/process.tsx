@@ -49,13 +49,13 @@ export default function ProcessPage() {
           </div>
 
           {/* CTA Button */}
-          <div className="mt-12 text-center">
+          <div className="mt-12 text-center px-4 md:px-0">
             <Link href="/booking">
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 text-lg px-10 py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 text-lg px-4 md:px-10 py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg hover:shadow-xl transition-all"
               >
-                Book Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                Book Your Free Consultation <ArrowRight className="ml-2 h-4 w-4 hidden sm:inline" />
               </Button>
             </Link>
           </div>
@@ -107,14 +107,14 @@ export default function ProcessPage() {
             ))}
           </div>
 
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center px-4 md:px-0">
             <Link href="/booking">
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-white text-lg px-8 py-6 rounded-sm font-sans uppercase tracking-widest transition-all"
+                className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white text-base md:text-lg px-4 md:px-8 py-6 rounded-sm font-sans uppercase tracking-widest transition-all whitespace-normal h-auto md:h-12"
               >
-                Schedule Your Consultation <ArrowRight className="ml-2 h-4 w-4" />
+                Schedule Your Consultation <ArrowRight className="ml-2 h-4 w-4 hidden sm:inline" />
               </Button>
             </Link>
           </div>
@@ -167,7 +167,7 @@ export default function ProcessPage() {
               { q: "What’s included in the 1% fee?", a: "MLS listing, professional photography, pricing guidance, buyer inquiries, and negotiation support." },
               { q: "Is there any obligation?", a: "No, the consultation is completely free." }
             ].map((item, idx) => (
-              <div key={idx} className="border-b border-border pb-6">
+              <div key={idx} className="border-b border-border pb-6 text-center md:text-left">
                 <h3 className="text-xl font-serif text-primary mb-2">{item.q}</h3>
                 <p className="text-muted-foreground font-sans">{item.a}</p>
               </div>
