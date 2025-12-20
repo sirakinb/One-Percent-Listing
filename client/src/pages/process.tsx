@@ -34,10 +34,10 @@ export default function ProcessPage() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-5xl mx-auto"
+          className="max-w-5xl mx-auto w-full"
         >
           {/* Responsive Video Container */}
-          <div className="relative aspect-video w-full bg-black/5 rounded-sm overflow-hidden shadow-2xl border border-primary/10">
+          <div className="relative w-full pb-[56.25%] bg-black/5 rounded-sm overflow-hidden shadow-2xl border border-primary/10 mx-auto">
              {/* Placeholder for user video */}
             <iframe 
               className="absolute inset-0 w-full h-full"
@@ -53,7 +53,7 @@ export default function ProcessPage() {
             <Link href="/booking">
               <Button 
                 size="lg" 
-                className="bg-primary text-white hover:bg-primary/90 text-lg px-10 py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto bg-primary text-white hover:bg-primary/90 text-lg px-10 py-8 rounded-sm font-sans uppercase tracking-widest shadow-lg hover:shadow-xl transition-all"
               >
                 Book Your Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
