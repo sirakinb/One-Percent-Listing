@@ -123,29 +123,29 @@ export default function ProcessPage() {
 
       {/* 4. SAVINGS EXAMPLE */}
       <section className="py-24 bg-secondary/30">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 w-full">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-primary mb-4">See How Much You Could Save</h2>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-sm shadow-xl border border-border">
+          <div className="max-w-3xl mx-auto bg-white p-6 md:p-12 rounded-sm shadow-xl border border-border w-full">
              <div className="space-y-6">
-                <div className="flex justify-between items-center border-b border-border pb-4">
+                <div className="flex flex-col sm:flex-row justify-between items-center border-b border-border pb-4 gap-2 text-center sm:text-left">
                   <span className="text-lg md:text-xl font-serif text-muted-foreground">Home Value</span>
                   <span className="text-lg md:text-xl font-sans font-bold text-primary">$350,000</span>
                 </div>
                 
-                <div className="flex justify-between items-center border-b border-border pb-4 opacity-60">
+                <div className="flex flex-col sm:flex-row justify-between items-center border-b border-border pb-4 opacity-60 gap-2 text-center sm:text-left">
                   <span className="text-lg md:text-xl font-serif text-muted-foreground">Traditional 6% Listing Fee</span>
                   <span className="text-lg md:text-xl font-sans font-bold text-destructive line-through">$21,000</span>
                 </div>
 
-                <div className="flex justify-between items-center border-b border-border pb-4">
+                <div className="flex flex-col sm:flex-row justify-between items-center border-b border-border pb-4 gap-2 text-center sm:text-left">
                   <span className="text-lg md:text-xl font-serif text-primary font-medium">Jackson 1% Listing Fee</span>
                   <span className="text-lg md:text-xl font-sans font-bold text-primary">$3,500</span>
                 </div>
 
-                <div className="flex justify-between items-center pt-4 bg-accent/10 p-4 rounded-sm">
+                <div className="flex flex-col sm:flex-row justify-between items-center pt-4 bg-accent/10 p-4 rounded-sm gap-2 text-center sm:text-left">
                   <span className="text-xl md:text-2xl font-serif text-primary font-bold">Total Savings</span>
                   <span className="text-xl md:text-2xl font-sans font-bold text-accent">$17,500</span>
                 </div>
