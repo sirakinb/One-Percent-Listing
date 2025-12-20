@@ -122,3 +122,11 @@
     @apply bg-white/80 backdrop-blur-md border border-white/50;
   }
 }
+
+/* Wistia Player Styles */
+wistia-player[media-id='lp4bpq6bks']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/lp4bpq6bks/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 56.25%;
+}

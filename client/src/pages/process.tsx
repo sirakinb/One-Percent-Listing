@@ -37,15 +37,10 @@ export default function ProcessPage() {
           className="max-w-5xl mx-auto w-full"
         >
           {/* Responsive Video Container */}
-          <div className="relative w-full pb-[56.25%] bg-black/5 rounded-sm overflow-hidden shadow-2xl border border-primary/10 mx-auto">
-             {/* Placeholder for user video */}
-            <iframe 
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/2QLRC3T6AAw?rel=0"
-              title="VSL Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="relative w-full bg-black/5 rounded-sm overflow-hidden shadow-2xl border border-primary/10 mx-auto">
+             {/* Wistia Video */}
+             {/* @ts-ignore - Wistia custom element */}
+            <wistia-player media-id="lp4bpq6bks" aspect="1.7777777777777777"></wistia-player>
           </div>
 
           {/* CTA Button */}
